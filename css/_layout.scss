@@ -1,0 +1,119 @@
+html,
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+@media(max-width:1024px) {
+
+    html,
+    body {
+        font-size: 14px;
+    }
+}
+
+.img-map {
+    width: 100%;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.text-blue {
+    color: #098aed;
+}
+
+.d-none {
+    display: none;
+}
+
+.fb40 {
+    flex-basis: 40%;
+}
+
+.fb60 {
+    flex-basis: 60%;
+}
+
+.fb50 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.align-stretch {
+    align-items: stretch !important;
+}
+
+.ta-left {
+    text-align: left;
+
+}
+
+
+.align-start {
+    align-items: flex-start;
+
+}
+
+.link-hover {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #098aed;
+        transform: scale(0);
+        transition: all .3s;
+    }
+
+    &:hover {
+        &::after {
+            transform: scale(1);
+        }
+    }
+}
+
+
+.header {
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+//bg
+.usa {
+    background-image: url(../img/usa.jpg);
+}
+
+.europe {
+    background-image: url(../img/header-europe.jpg);
+}
+
+.italy {
+    background-image: url(../img/header-italy.jpg);
+}
+
+.german {
+    background-image: url(../img/header-german.jpg);
+}
+
+.spain {
+    background-image: url(../img/header-spain.jpg);
+}
+
+//bg

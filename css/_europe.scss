@@ -1,0 +1,27 @@
+.choose-country {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    padding-top: 2em;
+    padding: 0 -8px;
+    &__item {
+        flex-basis: 33.333%;
+        margin: 0 8px;
+    }
+    img {
+        width: 100%;
+    }
+    span {
+        display: inline-block;
+        padding-top: 1em;
+        color: #000;
+    }
+
+}
+
+.h2-title {
+    font-size: 1.75rem;
+    letter-spacing: .45px;
+    line-height: 1.5;
+}

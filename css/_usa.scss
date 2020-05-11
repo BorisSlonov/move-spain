@@ -1,0 +1,120 @@
+.service-h1 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-left: -8px;
+        padding-right: -8px;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    }
+
+    &__row:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+
+
+    &__item {
+        margin: 0 8px;
+        flex-basis: 50%;
+        text-align: left;
+
+    }
+
+
+    &__img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &__list {
+        font-size: 1.4rem;
+        list-style: none;
+        padding: 0;
+        line-height: 1.5;
+
+        li:not(:first-child) {
+            margin-top: 1em;
+        }
+    }
+
+    &__title {
+        font-size: 1.55rem;
+        letter-spacing: .35px;
+    }
+
+    &__title-2 {
+        font-size: 1.3rem;
+        letter-spacing: .45px;
+        line-height: 1.5;
+        padding-top: 0;
+        margin-bottom: 1em;
+    }
+
+    &__finder-list {
+        align-self: center;
+        padding-left: 0;
+        margin: 0;
+
+        li {
+            margin-top: 1em;
+            border-bottom: 1px solid #098aed;
+            padding-bottom: 1em;
+        }
+        
+    }
+}
+
+.f-reverse {
+    flex-direction: row-reverse;
+}
+
+@media(max-width:900px) {
+    .service {
+        &__row {
+            flex-direction: column-reverse;
+        }
+
+        .f-reverse {
+            flex-direction: column-reverse;
+        }
+
+        &__img {
+            max-width: 400px;
+        }
+    }
+}
+
+
+
+
+
+
+.cost-table {
+    width: 100%;
+
+    &__row {
+        display: flex;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__item {
+        background-color: #098aed;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-radius: 5px;
+        margin: 1px;
+    }
+}
